@@ -1,6 +1,7 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React from "react";
 import { useTheme } from "@/hooks/ThemeContext";
+import { ThemedText } from "@/components/ui/ThemedText";
 
 const index = () => {
 	const theme = useTheme();
@@ -9,7 +10,7 @@ const index = () => {
 		<View
 			style={[styles.container, { backgroundColor: theme.backgroundColor }]}
 		>
-			<Text>index</Text>
+			<ThemedText>index</ThemedText>
 		</View>
 	);
 };

@@ -20,6 +20,9 @@ export default function TabLayout() {
 				name="index"
 				options={{
 					title: "Home",
+					tabBarStyle: {
+						backgroundColor: theme.backgroundColor,
+					},
 				}}
 			/>
 		</Tabs>
