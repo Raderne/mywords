@@ -1,10 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React from "react";
+import { ThemedText } from "@/components/ui/ThemedText";
 
 const profile = () => {
 	return (
 		<View style={styles.container}>
-			<Text>profile</Text>
+			<ThemedText>profile</ThemedText>
 		</View>
 	);
 };
