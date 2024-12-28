@@ -11,7 +11,7 @@ export default function TabLayout() {
 			screenOptions={{
 				headerShown: false,
 				tabBarButton: HapticTab,
-				tabBarStyle: {
+				sceneStyle: {
 					backgroundColor: theme.backgroundColor,
 				},
 			}}
@@ -20,6 +20,15 @@ export default function TabLayout() {
 				name="index"
 				options={{
 					title: "Home",
+					tabBarStyle: {
+						backgroundColor: theme.backgroundColor,
+					},
+				}}
+			/>
+			<Tabs.Screen
+				name="profile"
+				options={{
+					title: "Profile",
 					tabBarStyle: {
 						backgroundColor: theme.backgroundColor,
 					},
