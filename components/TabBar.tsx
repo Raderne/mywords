@@ -1,4 +1,4 @@
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, LayoutChangeEvent } from "react-native";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import TabBarButton from "./TabBarButton";
 import { Colors } from "@/constants/Colors";
@@ -53,10 +53,11 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
 const styles = StyleSheet.create({
 	tabBar: {
 		flexDirection: "row",
-		height: 80,
+		maxHeight: 80,
 		backgroundColor: Colors.dark.background,
 		alignItems: "center",
 		justifyContent: "space-between",
-		paddingHorizontal: 30,
+		paddingHorizontal: 20,
+		flex: 1,
 	},
 });
