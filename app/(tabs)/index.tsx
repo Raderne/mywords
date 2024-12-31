@@ -3,19 +3,19 @@ import React from "react";
 import { useTheme } from "@/hooks/ThemeContext";
 import { ThemedText } from "@/components/ui/ThemedText";
 
-const index = () => {
+const Home = () => {
 	const theme = useTheme();
 
 	return (
 		<View
 			style={[styles.container, { backgroundColor: theme.backgroundColor }]}
 		>
-			<ThemedText>index</ThemedText>
+			<ThemedText>Home</ThemedText>
 		</View>
 	);
 };
 
-export default index;
+export default Home;
 
 const styles = StyleSheet.create({
 	container: {
